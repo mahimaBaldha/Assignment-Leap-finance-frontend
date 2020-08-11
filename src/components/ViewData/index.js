@@ -32,7 +32,7 @@ class ViewData extends Component {
           let answer = res.data;
           this.setState({ urlResponse: res.data });
 
-          if(res.headers["content-type"] == IS_JSON)
+          if(res.headers["content-type"] === IS_JSON)
              answer = JSON.stringify(JSON.stringify(res.data));
 
           axios.post(
