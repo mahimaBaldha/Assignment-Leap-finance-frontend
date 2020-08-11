@@ -1,0 +1,23 @@
+.response-container {
+    border:1px solid rgb(215, 212, 212);
+    width: 80%;
+    margin: auto;
+    margin-top: 2%;
+}
+.response-box {
+    box-sizing: content-box;
+}
+
+/* .urlResponse {
+    border:1px solid darkgreen;
+} */
+
+.viewdata-button {
+    margin-top: 2%;
+}
+
+.btn {
+    height: 30px;
+    width: 100%;
+    background-color: rgb(215, 212, 212);
+}

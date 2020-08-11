@@ -1,0 +1,40 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid brown;
+  height: 100%;
+}
+
+.login-form {
+  width: 30em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.login-title {
+  text-align: center;
+  font-size: large;
+  padding: 1em;
+  color: rgb(94, 92, 92);
+}
+
+.input-text {
+  border: none;
+  border-bottom: 1px solid rgb(215, 213, 213);
+  width: 90%;
+  height: 2em;
+  margin: 2% 3%;
+  padding: 1%;
+  outline: none;
+  font-size: 1.2em;
+}
+.input-text:hover {
+  border-bottom: 1px solid rgb(175, 175, 175);
+}
+.submit-btn:hover {
+  background-color: rgb(218, 218, 218);
+}
+
+.error-message {
+  color: red;
+}
