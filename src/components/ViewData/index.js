@@ -22,6 +22,7 @@ class ViewData extends Component {
   componentDidMount() {
     const config = {
       headers: {
+        'Access-Control-Allow-Origin':"*",
         'x-auth-token': localStorage.getItem('token'),
       },
     };
@@ -46,7 +47,6 @@ class ViewData extends Component {
       }
     } catch (error) {
       this.setState({ urlResponse: 'Unable to get data' });
-      console.error(error);
     }
   }
 

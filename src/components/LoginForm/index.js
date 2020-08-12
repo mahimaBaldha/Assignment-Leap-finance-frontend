@@ -27,22 +27,18 @@ class LoginForm extends Component {
       this.setState({errorMessage: ''})
       try {
         axios.post(`${LOGIN_URL}`, { id: username, password }).then((res) => {
-          console.log(res);
           if (res.data.message === 'success') {
             localStorage.setItem('token', res.data.data.token);
             this.props.history.push('/url');
           } else {
             this.setState({ errorMessage: 'Invalid credentials' });
-            console.log('1111');
           }
         });
       } catch (error) {
         this.setState({ errorMessage: 'Invalid credentials' });
-        console.error('Something went wrong');
       }
     } else {
       this.setState({errorMessage: 'Please enter valid username and password'})
-      console.log('2222222');
     }
   };
   render() {

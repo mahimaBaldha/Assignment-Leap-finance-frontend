@@ -52,8 +52,7 @@ class UrlInputForm extends Component {
       <div className="login-container">
         <form className="login-form">
           <div className="login-title">
-            <span><strong>Enter Url Here</strong></span>
-            {/* <hr /> */}
+            <span><strong>Enter URL Here</strong></span>
           </div>
 
           <input
